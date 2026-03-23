@@ -1,0 +1,11 @@
+async function getOrder() {
+    let order = await new Promise(function(resolve) {
+        setTimeout(function() {
+            resolve("Order Details Loaded");
+        }, 2000);
+    });
+
+    console.log(order);
+}
+
+getOrder();
